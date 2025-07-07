@@ -1,1 +1,111 @@
-/* You can add global styles to this file, and also import other style files */
+body, button, input, textarea, select {
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 
+               'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+               sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Заголовки */
+h1, h2, h3, h4 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Код и моноширинный текст */
+code, pre {
+  font-family: 'IBM Plex Mono', monospace;
+}
+:root {
+/*   color: #0f0f0f;
+  color: #121212;
+  color: #1a1a1a;
+  color: #2d2d2d;
+  color: hsl(51, 100%, 50%);
+  color: #2ecc71;
+  color: #1abc9c;
+  color: #2e60cc;
+  color: #e74c3c; */
+  /* --body-one-color: #24283D; */
+  --body-two-color: #121826;
+  --gold-color:hsl(51, 100%, 50%);
+  --light-blue-color:#78CBFF;
+  --blue-color: #2C7FCE;
+  --black-bkue-color: #362C76;
+  --text-main:#E0E0E0 ;
+  --text-vtorostep:   #A0A0A0;
+  --gran: #444444;
+  --main: #7AA2F7;
+  --lavanda:#BB9AF7;
+  --gold:#FFD700;
+  --kartochki:rgba(4, 61, 126, 0.8);
+  --header:#0F0F1A;
+  --gold-blur:#ffd90041;
+  --main-blur: #1d366b;
+  --box-shadow: rgba(59, 117, 241, 0.15);
+  --border:#3c4a5a;
+  --text-main: #e0e0e0;
+
+
+
+ /*  color: #1e1e1e;
+  color: #2a2a2a;
+  color: #3d3d3d;
+  color: #6a5acd;
+  color: #20b2aa;
+  color: #ffa07a;
+  color: #a0a0a0;
+  color: #e0e0e0;
+  color: #444444;
+
+  color: #121826;
+  color: #1a1e2c;
+  color: #24283d;
+  color: #7aa2f7;
+  color: #bb9af7;
+  color: #ff9e64;
+  color: #a0a0a0;
+  color: #e0e0e0;
+  color: #3b3b3b;
+
+  color: #f5f7fa;
+  color: #e8edf2;
+  color: #dce4ef;
+  color: #8bd8c7;
+  color: #6ecbba;
+  color: #a7e8dd;
+  color: #3a3a3a;
+  color: #7a7a7a;
+  color: #d1d9e6;
+
+  color: #1d232a;
+  color: #2a343f;
+  color: #3c4a5a;
+  color: #4ecdc4;
+  color: #2bb4a6;
+  color: #88f7e6;
+  color: #e6edf4;
+  color: #a6b5c8;
+  color: #3c4a5a; */
+}
+
+body{
+   
+   height: 100dvh;
+   background: var(--body-two-color);
+   color:var(--text-main);
+   display: grid;
+   margin: 0;
+   padding: 0;
+}
+.btn_a{
+  text-decoration: none;
+}
+.main-text{
+  color: var(--text-main);
+}
+header,
+footer,
+section {
+   padding: 100px 0;
+}

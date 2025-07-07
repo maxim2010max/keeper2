@@ -1,0 +1,18 @@
+<header class="header-main">
+   <div class="logo-container">
+       <a href="" [routerLink]="['']"><img src="assets/logo.svg" class="main-logo"></a>
+   </div>
+   <nav class="nav-buttons">
+    <!--   @for(h_btn of buttons_header; track buttons_header){
+         <button  class="nav-button" [routerLink]="buttons_header.link" routerLinkActive="active">
+      {{ h_btn.text }}
+    </button>
+      } -->
+    <a class="btn-header btn_a" [routerLink]="['password']">Пароли</a>
+    <a class="btn-header btn_a" [routerLink]="['todo']">TODO</a>
+    <a class="btn-header btn_a" [routerLink]="['diary']">Дневник</a>
+    <a class="btn-header btn_a" [routerLink]="['info']">О разработчике</a>
+  </nav>
+
+</header>
+<!-- =====================================КНОПКИ========================================== -->

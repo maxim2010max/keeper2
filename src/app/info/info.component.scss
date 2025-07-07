@@ -1,0 +1,163 @@
+/* .info-block{
+   width: 70%;
+   height: 200px;
+   background: var(--main-blur) ;
+   display: grid;
+   align-items: center;
+   
+} */
+/* Стили для центрированного блока */
+body{
+  padding: 0;
+  margin: 0;
+}
+.centered-block {
+  width: 70%;
+  /* height: 500px; */
+
+  margin: 3rem auto;
+
+  padding: 2.5rem;
+  background: var(--kartochki); /* Полупрозрачный тёмный фон */
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 32px var(--box-shadow);
+  backdrop-filter: blur(8px);
+  text-align: center;
+
+  /* Анимация появления */
+  animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Эффект стекла */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(122, 162, 247, 0.1) 0%,
+      rgba(29, 35, 42, 0.8) 100%
+    );
+    border-radius: inherit;
+    z-index: -1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .centered-block {
+    padding: 1.5rem;
+    margin: 1rem auto;
+    width: 90%;
+  }
+}
+.h3-info {
+  margin-top: -35px;
+}
+.name-info {
+  display: grid;
+  position: relative;
+  padding-left: 40px;
+  line-height: 1.5;
+  /* border: 1px solid silver;
+  border-radius: 15px; */
+}
+.logo-name-info {
+  width: 120px;
+  height: 120px;
+
+  position: absolute;
+  left: 0;
+
+  /*  transform: translateY(-10%); */
+}
+.h3-myname-info {
+  font-size: 24px;
+  text-align: left;
+  position: relative;
+  left: 90px;
+}
+.russia-img {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 9px;
+}
+.info-geo {
+  font-size: 18px;
+  text-align: left;
+  position: relative;
+  left: 90px;
+  bottom: 20px;
+  color: #a0a0a0;
+}
+.geo {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  right: 5px;
+  top: 1px;
+}
+.info-my {
+  display: grid;
+  position: relative;
+  padding-left: 40px;
+  line-height: 1.5;
+  /* grid-template-columns: 1fr 200px; */
+}
+.my-info {
+  font-size: 22px;
+}
+.forms-stack {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 5px 8px;
+  border-radius: 4px;
+  border: 2px solid var(--border);
+  display: inline;
+  font-size: 18px;
+  font-weight: 700;
+  height: 24px;
+  margin: 10px;
+}
+.project{
+  font-size: 22px;
+}
+.vk{
+  width: 46px;
+  height: 46px;
+  margin: 15px;
+  cursor: pointer;
+
+}
+.tt{
+ width: 46px;
+  height: 46px;
+  margin: 15px;
+  cursor: pointer;
+}
+.github{
+  width: 46px;
+  height: 46px;
+  margin: 15px;
+  cursor: pointer;
+}
+.tg{
+  width: 46px;
+  height: 46px;
+  margin: 15px;
+  cursor: pointer;
+}
