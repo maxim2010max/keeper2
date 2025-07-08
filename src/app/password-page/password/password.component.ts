@@ -46,14 +46,19 @@ export class PasswordComponent {
 
 } */
   import { Component, signal, viewChild, effect } from '@angular/core';
+  import { FormsModule } from '@angular/forms';
 
   @Component({
+    imports: [
+      FormsModule,
+    ],
     selector: 'app-password',
     standalone: true,
     templateUrl: './password.component.html',
     styleUrl: './password.component.scss',
   })
   export class PasswordComponent {
+    PasswordComponentMain = signal<boolean>(false);
     password = signal('');
     service = signal('');
     lastAdded = signal('');
@@ -89,10 +94,12 @@ export class PasswordComponent {
       this.items.update((items) => [...items, newItem]);
       this.password.set('');
       this.service.set('');
+    /*   this.passwordInput()!.value = '';
+      this.serviceInput()!.value = ''; */
 
       /*       setTimeout(() => this.passwordInput()?.focus());
        */
-    }
+    } /* сделать кнопку скрытия пароля в поле и в данных */
 
     removeItem(id: number) {
       this.items.update((items) => items.filter((item) => item.id !== id));
