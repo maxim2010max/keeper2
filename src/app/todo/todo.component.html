@@ -1,11 +1,28 @@
 <p class="main-b">Сохраняй свои заметки в ToDo</p>
 <div class="todo-component">
   <div class="input-todo-section">
-    <input class="input-todo main-text" type="text" placeholder="Введи заметку"/>
+    <input
+      class="input-todo main-text"
+      type="text"
+      placeholder="Введи заметку"
+      [value]="todo()"
+      #todoInput
+      (input)="updateTodo(todoInput.value)"
+    />
 
-    <button class="bth-todo-add">
+    <button class="bth-todo-add" (click)="addTodo()" [disabled]="!todo()" [title]="!todo() ? 'Заполни поле!' : ''">
       Добавить
-      <img src="keeper\public\assets\Icon.png" alt="" />
     </button>
   </div>
+   <div class="todo-list">
+    @for (item of itemsTodo(); track item.id) {
+    <div class="todo-item">
+      <p class="todo-text">Ваша заметка: {{ item.todo }}</p>
+      <button class="delete-btn" (click)="removeItem(item.id)">Удалить</button>
+    </div>
+    } @empty {
+    <p class="empty-message">Нет сохранённых заметок</p>
+    }
+  </div>
 </div>
+<!-- добавит категории теги и тд -->

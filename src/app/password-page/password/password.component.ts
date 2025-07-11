@@ -61,8 +61,8 @@ export class PasswordComponent {
     PasswordComponentMain = signal<boolean>(false);
     password = signal('');
     service = signal('');
-    lastAdded = signal('');
-    items = signal<{ id: number; password: string; service: string }[]>([]);
+/*     lastAdded = signal('');
+ */    items = signal<{ id: number; password: string; service: string }[]>([]);
     constructor() {
       const saved = localStorage.getItem('passwordItems');
       if (saved) {
