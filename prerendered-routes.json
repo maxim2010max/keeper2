@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "/keeper2": {},
+    "/keeper2/diary": {},
+    "/keeper2/info": {},
+    "/keeper2/password": {},
+    "/keeper2/todo": {}
+  }
+}
