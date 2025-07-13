@@ -18,7 +18,7 @@
 
           "builder": "@angular-devkit/build-angular:application",
           "options": {"baseHref": "/my-app/",
-            "outputPath": "dist/keeper",
+            "outputPath": "dist/keeper/browser",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
