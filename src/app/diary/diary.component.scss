@@ -3,19 +3,22 @@
    text-align: center;
    margin-bottom: 20px;
  }
- .diary-form-section{
-  width: 30%;
-  height: 200px;
-  background: var(--kartochki);
-  margin: 20px auto;
+ .diary-component{
+     font-family: Arial, sans-serif;
+   max-width: 700px;
+   margin: 20px auto;
    padding: 20px;
+   background: var(--kartochki); 
    border-radius: 12px;
    border: 1px solid var(--border);
    box-shadow: 0 8px 32px var(--box-shadow);
    border-radius: 8px;
-      animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-
+   animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
  }
+.diary-form-section{
+
+
+ } 
   @keyframes fadeInUp {
    from {
      opacity: 0;
